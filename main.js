@@ -39,7 +39,6 @@ console.log(firstName);
 const favorite = ["orange", "apple", "mango"];
 const movie = Array("Lord 10", "Mongoose");
 
-
 console.log(favorite[0]);
 const status = undefined;
 console.log(lastName);
@@ -47,6 +46,13 @@ const num = 2.02;
 const bi = "5";
 console.log(bi + 5);
 console.log(Number(bi) + 5);
+
+
+const getElement = (data) => {
+    return data[0];
+}
+
+console.log(getElement(["php", "python", "javascript", "java"]));
 
 
 
