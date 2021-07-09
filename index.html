@@ -6,11 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <style>
+        .lightOn {
+            background: blue;
+            color: white;
+            border-radius: 10px;
+            border-color: blue;
+            padding: 6px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .lightOff {
+            background: rgb(255, 21, 0);
+            color: white;
+            border-radius: 10px;
+            border-color: rgb(255, 21, 0);
+            padding: 6px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .btnSong {
+            background: rgba(83, 5, 207, 0.445);
+            color: white;
+            border-radius: 10px;
+            border-color: rgba(83, 5, 207, 0.445);
+            padding: 6px;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
     <h1>Hello World</h1>
     <p id="greet"></p>
+    <div style="align-items: center;">
+
+    </div>
+
+    <div class="container" style="margin-left:250px">
+        <img src="images/pic_bulboff.gif" id="bulb">
+
+
+        <button class="lightOn" id="lightOn">Light on</button>
+        <button class="lightOff" id="lightOff">Light out</button>
+        
+        <button class="btnSong" id="btnSong">Change song</button>
+
+        <div id="song">Song</div>
+
+    </div>
 
 
     <script src="main.js"></script>
