@@ -1,4 +1,5 @@
 
+//lesson one
 let age;
 let s = 20;
 age = 45;
@@ -47,7 +48,7 @@ const bi = "5";
 console.log(bi + 5);
 console.log(Number(bi) + 5);
 
-lesson two
+//lesson two
 data = { "fname": "jhon" }
 const newdata = data;
 newdata.fname = "jonah"
@@ -192,7 +193,7 @@ console.log(stSize);
 const st1Size = phoneSize.join("-");
 console.log(st1Size);
 
-lesson four
+//lesson four
 
 const officer = {
     fname: "philip",
