@@ -1,234 +1,234 @@
 
-let age;
-let s = 20;
-age = 45;
+// let age;
+// let s = 20;
+// age = 45;
 
-const pi = 3.142;
+// const pi = 3.142;
 
-s -= 25;
-s = s + 25;
-document.write(age, " ", s);
-console.log(pi);
-console.log(10 % 2);
+// s -= 25;
+// s = s + 25;
+// document.write(age, " ", s);
+// console.log(pi);
+// console.log(10 % 2);
 
-console.log(10 ** 2);
-console.log(age++);
-
-
-let firstName = "John";//string
-console.log(typeof firstName);
-
-let age2 = 20;//number
-console.log(typeof age2);
-
-let isLoginIn = false;
-console.log(typeof isLoginIn);
-
-const people = { firstName: "Mike", lastName: "Emma" };
-const fullName = people.firstName + " " + people.lastName;
-//destructuring
-const { firstName, lastName } = people;
-
-console.log(people.lastName);
-
-console.log(firstName);
-
-//console.log(fullName);
+// console.log(10 ** 2);
+// console.log(age++);
 
 
-const favorite = ["orange", "apple", "mango"];
-const movie = Array("Lord 10", "Mongoose");
+// let firstName = "John";//string
+// console.log(typeof firstName);
 
-console.log(favorite[0]);
-const status = undefined;
-console.log(lastName);
-const num = 2.02;
-const bi = "5";
-console.log(bi + 5);
-console.log(Number(bi) + 5);
+// let age2 = 20;//number
+// console.log(typeof age2);
 
-lesson two
-data = { "fname": "jhon" }
-const newdata = data;
-newdata.fname = "jonah"
-console.log(data);
-console.log(newdata);
+// let isLoginIn = false;
+// console.log(typeof isLoginIn);
 
-const score = 90;
-let newScore = score;
-newScore = 95
-console.log(score);
-console.log(newScore);
+// const people = { firstName: "Mike", lastName: "Emma" };
+// const fullName = people.firstName + " " + people.lastName;
+// //destructuring
+// const { firstName, lastName } = people;
 
-const gretting = "hello mr john , you are welcome to HIIT";
-const words = gretting.split(",");
-console.log(gretting)
-console.log(words);
-const subgreeting = gretting.slice(1, 5);
-console.log(subgreeting);
-console.log(gretting.length);
-const pos = gretting.indexOf("john");
-console.log(pos);
-const isInWord = gretting.includes("hello");
-console.log(isInWord);
+// console.log(people.lastName);
 
-const upperleter = gretting.toUpperCase();
-console.log(upperleter);
+// console.log(firstName);
 
-const smallWord = gretting.substring(0, 9);
-console.log(smallWord)
-const smallWordsub = gretting.substring(0, 4);
-console.log(smallWordsub)
-console.log(gretting.replace("john", "wyldpych"));
-
-//functions
-function sayHi() {
-    return (90 + 20);
-    // console.log("hi function");
-}
-const d = sayHi();
-console.log(d);
+// //console.log(fullName);
 
 
-function login(username, password) {
-    let access;
-    if (username == "admin" && password == "admin") {
-        access = true;
-    } else {
-        access = false;
-    }
-    return access;
-}
-console.log(login("admin", "admin"));
+// const favorite = ["orange", "apple", "mango"];
+// const movie = Array("Lord 10", "Mongoose");
 
-function square(num) {
-    return num * num;
-}
-function printhi() {
-    console.log("hi")
-}
-console.log(square(10));
+// console.log(favorite[0]);
+// const status = undefined;
+// console.log(lastName);
+// const num = 2.02;
+// const bi = "5";
+// console.log(bi + 5);
+// console.log(Number(bi) + 5);
 
-const getElement = (data) => {
-    return data[0];
-}
-//console.log(getElement(["php", "python", "javascript", "java"]));
+// lesson two
+// data = { "fname": "jhon" }
+// const newdata = data;
+// newdata.fname = "jonah"
+// console.log(data);
+// console.log(newdata);
 
-//lesson three
-const greetMe = () => console.log("hi");
-greetMe();
+// const score = 90;
+// let newScore = score;
+// newScore = 95
+// console.log(score);
+// console.log(newScore);
 
-function greetThem() {
-    console.log('hi them');
-}
-greetThem();
+// const gretting = "hello mr john , you are welcome to HIIT";
+// const words = gretting.split(",");
+// console.log(gretting)
+// console.log(words);
+// const subgreeting = gretting.slice(1, 5);
+// console.log(subgreeting);
+// console.log(gretting.length);
+// const pos = gretting.indexOf("john");
+// console.log(pos);
+// const isInWord = gretting.includes("hello");
+// console.log(isInWord);
 
+// const upperleter = gretting.toUpperCase();
+// console.log(upperleter);
 
-const area = (height, width) => {
-    return height * width;
-}
-console.log(area(12, 14));
+// const smallWord = gretting.substring(0, 9);
+// console.log(smallWord)
+// const smallWordsub = gretting.substring(0, 4);
+// console.log(smallWordsub)
+// console.log(gretting.replace("john", "wyldpych"));
 
-const perimeter = r => r * 2 * 3.142;
-console.log(perimeter(6));
-
-const employees = ["john", "mike", "peter", "raymond"];
-console.log(employees);
-
-const users = [
-    { username: "peter1000", level: "novice", rank: "senior" },
-    { username: "okwori32", level: "master", rank: "boss" },
-    { username: "abu290", level: "master", rank: "senior" },
-];
-
-console.log(users.length);
-employees.push("loveth");
-console.log(employees);
-
-console.log(employees.indexOf("loveth"));
-employees.shift();
-console.log(employees);
-const seniorUsers = users.filter(user => user.rank == "senior");
-console.log(seniorUsers);
-
-const scores = [56, 45, 34, 65, 90];
-const highScore = scores.find(score => score > 60);
-console.log(highScore);
-console.log(scores);
-scores.pop()
-console.log(scores);
-
-const newUser = users.map((user) => {
-    user.color = "red";
-    return user;
-})
-
-console.log(newUser);
-const userData = [
-    { name: "joe" },
-    { name: "joy" },
-]
-if (userData.length > 0) {
-    userData.map((user) => {
-        console.log(user.name);
-    })
-}
-console.log(employees.sort());
-
-setTimeout(() => {
-    console.log("yes after 7 seconds");
-}, 7000);
+// //functions
+// function sayHi() {
+//     return (90 + 20);
+//     // console.log("hi function");
+// }
+// const d = sayHi();
+// console.log(d);
 
 
-console.log("hey dont wait for timeout");
-const phoneSize = [100, 20, 300, 90, 9, 45, 4];
-console.log(phoneSize.sort(function (a, b) {
-    return a - b;
-}));
+// function login(username, password) {
+//     let access;
+//     if (username == "admin" && password == "admin") {
+//         access = true;
+//     } else {
+//         access = false;
+//     }
+//     return access;
+// }
+// console.log(login("admin", "admin"));
 
-const stSize = phoneSize.toString();
-console.log(stSize);
+// function square(num) {
+//     return num * num;
+// }
+// function printhi() {
+//     console.log("hi")
+// }
+// console.log(square(10));
 
-const st1Size = phoneSize.join("-");
-console.log(st1Size);
+// const getElement = (data) => {
+//     return data[0];
+// }
+// //console.log(getElement(["php", "python", "javascript", "java"]));
 
-lesson four
+// //lesson three
+// const greetMe = () => console.log("hi");
+// greetMe();
 
-const officer = {
-    fname: "philip",
-    lname: "Mike", staffId: "0092", grade: "7/11", salary: 90000,
-    spouse: { fname: "Meg", lname: "Mike", age: 28 },
-    post: [
-        { id: 1, title: "javascript objects", comment: 45 },
-        { id: 2, title: "json objects", comment: 21 },
-    ],
-    printName: function () {
-        console.log(this.fname);
-    }
-};
-
-officer.spouse.color = "green";
-
-console.log(officer.spouse);
-console.log(officer.post[0].title);
-officer.printName();
+// function greetThem() {
+//     console.log('hi them');
+// }
+// greetThem();
 
 
-Object.keys(officer).forEach(key => {
-    console.log(officer[key]);
-});
+// const area = (height, width) => {
+//     return height * width;
+// }
+// console.log(area(12, 14));
 
-console.log(Object.keys(officer));
+// const perimeter = r => r * 2 * 3.142;
+// console.log(perimeter(6));
 
-console.log(Object.values(officer));
+// const employees = ["john", "mike", "peter", "raymond"];
+// console.log(employees);
 
-console.log(Object.entries(officer));
+// const users = [
+//     { username: "peter1000", level: "novice", rank: "senior" },
+//     { username: "okwori32", level: "master", rank: "boss" },
+//     { username: "abu290", level: "master", rank: "senior" },
+// ];
 
-const pet = { petName: "dog", petColor: "red" }
-const bull = { bullName: "lolly", size: "16cm" }
+// console.log(users.length);
+// employees.push("loveth");
+// console.log(employees);
 
-const animals = Object.assign(pet, bull);
-console.log(animals);
+// console.log(employees.indexOf("loveth"));
+// employees.shift();
+// console.log(employees);
+// const seniorUsers = users.filter(user => user.rank == "senior");
+// console.log(seniorUsers);
+
+// const scores = [56, 45, 34, 65, 90];
+// const highScore = scores.find(score => score > 60);
+// console.log(highScore);
+// console.log(scores);
+// scores.pop()
+// console.log(scores);
+
+// const newUser = users.map((user) => {
+//     user.color = "red";
+//     return user;
+// })
+
+// console.log(newUser);
+// const userData = [
+//     { name: "joe" },
+//     { name: "joy" },
+// ]
+// if (userData.length > 0) {
+//     userData.map((user) => {
+//         console.log(user.name);
+//     })
+// }
+// console.log(employees.sort());
+
+// setTimeout(() => {
+//     console.log("yes after 7 seconds");
+// }, 7000);
+
+
+// console.log("hey dont wait for timeout");
+// const phoneSize = [100, 20, 300, 90, 9, 45, 4];
+// console.log(phoneSize.sort(function (a, b) {
+//     return a - b;
+// }));
+
+// const stSize = phoneSize.toString();
+// console.log(stSize);
+
+// const st1Size = phoneSize.join("-");
+// console.log(st1Size);
+
+// lesson four
+
+// const officer = {
+//     fname: "philip",
+//     lname: "Mike", staffId: "0092", grade: "7/11", salary: 90000,
+//     spouse: { fname: "Meg", lname: "Mike", age: 28 },
+//     post: [
+//         { id: 1, title: "javascript objects", comment: 45 },
+//         { id: 2, title: "json objects", comment: 21 },
+//     ],
+//     printName: function () {
+//         console.log(this.fname);
+//     }
+// };
+
+// officer.spouse.color = "green";
+
+// console.log(officer.spouse);
+// console.log(officer.post[0].title);
+// officer.printName();
+
+
+// Object.keys(officer).forEach(key => {
+//     console.log(officer[key]);
+// });
+
+// console.log(Object.keys(officer));
+
+// console.log(Object.values(officer));
+
+// console.log(Object.entries(officer));
+
+// const pet = { petName: "dog", petColor: "red" }
+// const bull = { bullName: "lolly", size: "16cm" }
+
+// const animals = Object.assign(pet, bull);
+// console.log(animals);
 
 
 
@@ -251,8 +251,49 @@ btnSong.addEventListener("click", () => {
     song.textContent = "Aye Mama Osita Osadebe";
 })
 
+//lesson five
+const userInput = document.getElementById("name");
+const container = document.getElementById("name-container");
+console.log(container);
+userInput.addEventListener("keydown", () => {
+    container.textContent = userInput.value;
+})
+
+const textString = "this is the beginning";
+const btnLogin = document.getElementById("btn-login");
+btnLogin.addEventListener("mouseout", function () {
+    bulb.style.display = "none";
+})
+console.log(userInput.classList);
 
 
+
+const checkAge = (age) => {
+    if (age >= 18) {
+        console.log("eligible candidate");
+    } else {
+        console.log("ineligible candidate");
+    }
+}
+
+checkAge(16);
+
+const numberToWord = (num) => {
+    switch (num) {
+        case 1:
+            console.log("One");
+            break;
+        case 2:
+            console.log("Two");
+            break;
+        case 3:
+            console.log("Three");
+            break;
+        default:
+            console.log("Number out of range")
+            break
+    }
+}
 
 
 
