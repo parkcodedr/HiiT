@@ -1,4 +1,5 @@
 
+
 // let age;
 // let s = 20;
 // age = 45;
@@ -297,4 +298,82 @@ const numberToWord = (num) => {
 
 
 
+//lesson Seven
 
+// class Account {
+//     constructor(balance) {
+//         this.balance = balance;
+//     }
+//     getBalance = () => {
+//         return this.balance;
+//     }
+
+//     setBalance = (amount) => {
+//         this.balance = amount
+//     }
+
+//     withdrawMoney = (amount) => {
+//         if (this.balance < 1000) {
+//             console.log("Insufficient fund");
+//         } else {
+//             this.balance = this.balance - amount;
+//         }
+//     }
+// }
+
+// const johnAcc = new Account(0);
+// console.log("John's initial balance: " + johnAcc.getBalance());
+// johnAcc.setBalance(2000);
+// console.log("John's balance: " + johnAcc.getBalance());
+
+// const maryAcc = new Account(0);
+// console.log("Mary's initial balance: " + maryAcc.getBalance());
+// maryAcc.setBalance(4000);
+// console.log("Mary's balance: " + maryAcc.getBalance());
+
+// maryAcc.withdrawMoney(3000);
+// console.log("Mary's balance: " + maryAcc.getBalance());
+
+// let account = 0;
+// account = 5000;
+// console.log(account);
+// account = 2000;
+// console.log(account);
+
+class Account {
+
+    constructor(name, accNum, accType) {
+        this.name = name;
+        this.accNum = accNum;
+        this.accType = accType;
+    }
+    getAccountType = () => {
+        return this.accType;
+    }
+}
+
+class savingsAccount extends Account {
+    constructor(name, num, type) {
+        super(name, num, type);
+        this.minBalance = 1000;
+    }
+}
+class currentAccount extends Account {
+    constructor(name, num, type) {
+        super(name, num, type);
+        this.minBalance = 2000;
+    }
+}
+const savings = new savingsAccount("john " + " 30920293830 " + " Savings");
+console.log(savings.getAccountType());
+console.log(savings.minBalance);
+
+const current = new currentAccount("john", "300933293830", "Current");
+console.log(current.getAccountType());
+console.log(current.minBalance);
+
+const printName = (name) => {
+    console.log(`Your name is ${name}`);
+}
+printName("Favour");
+console.log(calculateArea(30, 45));
