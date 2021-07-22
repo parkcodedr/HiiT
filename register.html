@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HiiT | Register </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- href="css/bootstrap.css" -->
+</head>
+
+<body>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form name="registerForm" onsubmit="return validateForm()">
+                    <p class="lead">
+                        <b>Registration Form</b>
+                    </p>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First name">
+                        <p class="text-danger" id="fNameError"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select class="form-select" id="gender" name="gender">
+                            <option value="">Choose</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
