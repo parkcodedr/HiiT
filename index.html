@@ -35,8 +35,25 @@
             padding: 6px;
             outline: none;
             cursor: pointer;
+
+
+        }
+
+        #btn-login {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px
+        }
+
+        #currentTime {
+            height: 250px;
+            width: 250px;
+            border: 1px solid green;
+            margin: 20px;
         }
     </style>
+
 
 </head>
 
@@ -60,11 +77,18 @@
         <input type="text" class="name text-input" id="name">
         <div id="name-container">
         </div>
-        <button id="btn-login">Login</button>
+        <button id="btn-login" class="login">Login</button>
 
+        <div id="currentTime">
+            <h3>Current Time</h3>
+            <div id="timeContainer">
+
+            </div>
+        </div>
     </div>
 
     <script src="main.js"></script>
+
 </body>
 
 </html>

@@ -262,10 +262,10 @@ userInput.addEventListener("keydown", () => {
 
 const textString = "this is the beginning";
 const btnLogin = document.getElementById("btn-login");
-btnLogin.addEventListener("mouseout", function () {
-    bulb.style.display = "none";
-})
-console.log(userInput.classList);
+// btnLogin.addEventListener("mouseout", function () {
+//     bulb.style.display = "none";
+// })
+
 
 
 
@@ -341,7 +341,6 @@ const numberToWord = (num) => {
 // console.log(account);
 
 class Account {
-
     constructor(name, accNum, accType) {
         this.name = name;
         this.accNum = accNum;
@@ -376,4 +375,34 @@ const printName = (name) => {
     console.log(`Your name is ${name}`);
 }
 printName("Favour");
-console.log(calculateArea(30, 45));
+
+
+setTimeout(() => {
+    console.log("Async task");
+}, 7000);
+
+console.log("sequential");
+console.log("am synchronous");
+
+const showDate = () => {
+    const date = new Date();
+    const timeContainer = document.getElementById("timeContainer");
+    timeContainer.textContent = date.getHours() + " : "
+        + date.getMinutes() + " : " + date.getSeconds();
+
+}
+
+setInterval(showDate, 1000);
+
+const obj = {
+    firstname: "John",
+    lastname: "Favour"
+}
+const user = {
+    "userId": 1,
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
+}
+console.log(JSON.stringify(obj));
+

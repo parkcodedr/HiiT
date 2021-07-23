@@ -1,2 +1,2 @@
-// import areaMap from './areaMap';
-// areaMap.printName();
+import areaMap from './areaMap';
+areaMap.printName();
